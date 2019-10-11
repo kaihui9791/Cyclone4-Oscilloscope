@@ -1,0 +1,6 @@
+module uart_control();
+
+input gather_set;
+input bps_start;
+
+assign rd_uart_signal = ~bps_strat & gather_set[0];
