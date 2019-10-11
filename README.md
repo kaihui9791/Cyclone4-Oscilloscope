@@ -53,7 +53,7 @@ UART控制模块代码详见Oscilloscope_project/uart_control.v。<br>
 ![UART_control](https://github-img.oss-cn-chengdu.aliyuncs.com/img/UART_control.jpg)
 
 ### 上位机指令响应模块
-上位机指令响应模块接收来自上位机的指令，用于配置触发方式，复位，触发沿，与触发电平。因为00~AB为AD输出的范围，所以使用F0~F4作为可以使用的指令数值，F0:重置,F1:连续采样,F2:单次采样，F3:上升沿触发,F4:下降沿触发。
+上位机指令响应模块接收来自上位机的指令，用于配置触发方式，复位，触发沿，与触发电平。因为00-AB为AD输出的范围，所以使用F0-F4作为可以使用的指令数值，F0:重置,F1:连续采样,F2:单次采样，F3:上升沿触发,F4:下降沿触发。
 触发控制模块代码详见Oscilloscope_project/command_platform.v。<br>
 ![command](https://github-img.oss-cn-chengdu.aliyuncs.com/img/command.jpg)
 
