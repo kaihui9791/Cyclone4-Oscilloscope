@@ -1,0 +1,161 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'uart_control:inst8|rd_uart_signal'
+Slack : -3.275
+TNS   : -114.585
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -2.611
+TNS   : -20.944
+
+Type  : Slow 1200mV 85C Model Setup 'inst9|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.784
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'uart_control:inst8|rd_uart_signal'
+Slack : -0.386
+TNS   : -7.373
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.392
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'inst9|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.413
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'uart_control:inst8|rd_uart_signal'
+Slack : 0.035
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'inst9|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 46.729
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'uart_control:inst8|rd_uart_signal'
+Slack : -0.422
+TNS   : -23.391
+
+Type  : Slow 1200mV 85C Model Removal 'inst9|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 2.205
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'uart_control:inst8|rd_uart_signal'
+Slack : -3.201
+TNS   : -100.185
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : 9.754
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst9|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 24.697
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'uart_control:inst8|rd_uart_signal'
+Slack : -3.075
+TNS   : -106.432
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -2.311
+TNS   : -18.274
+
+Type  : Slow 1200mV 0C Model Setup 'inst9|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 2.461
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'uart_control:inst8|rd_uart_signal'
+Slack : -0.186
+TNS   : -2.137
+
+Type  : Slow 1200mV 0C Model Hold 'inst9|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.390
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'uart_control:inst8|rd_uart_signal'
+Slack : -0.104
+TNS   : -0.832
+
+Type  : Slow 1200mV 0C Model Recovery 'inst9|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 47.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'uart_control:inst8|rd_uart_signal'
+Slack : -0.197
+TNS   : -10.540
+
+Type  : Slow 1200mV 0C Model Removal 'inst9|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.959
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'uart_control:inst8|rd_uart_signal'
+Slack : -3.201
+TNS   : -100.185
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : 9.724
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst9|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 24.672
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.991
+TNS   : -7.646
+
+Type  : Fast 1200mV 0C Model Setup 'uart_control:inst8|rd_uart_signal'
+Slack : -0.867
+TNS   : -27.317
+
+Type  : Fast 1200mV 0C Model Setup 'inst9|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 6.125
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'uart_control:inst8|rd_uart_signal'
+Slack : -0.263
+TNS   : -5.741
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.011
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inst9|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.128
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'uart_control:inst8|rd_uart_signal'
+Slack : 0.441
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'inst9|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 48.492
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'uart_control:inst8|rd_uart_signal'
+Slack : -0.195
+TNS   : -10.694
+
+Type  : Fast 1200mV 0C Model Removal 'inst9|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.990
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'uart_control:inst8|rd_uart_signal'
+Slack : -1.000
+TNS   : -57.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : 9.410
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst9|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 24.732
+TNS   : 0.000
+
+------------------------------------------------------------

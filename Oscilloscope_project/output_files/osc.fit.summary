@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Jan 11 23:18:40 2019
+Quartus II 32-bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : osc
+Top-level Entity Name : osc
+Family : Cyclone IV E
+Device : EP4CE10F17C8
+Timing Models : Final
+Total logic elements : 325 / 10,320 ( 3 % )
+    Total combinational functions : 259 / 10,320 ( 3 % )
+    Dedicated logic registers : 249 / 10,320 ( 2 % )
+Total registers : 249
+Total pins : 22 / 180 ( 12 % )
+Total virtual pins : 0
+Total memory bits : 20,480 / 423,936 ( 5 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )
