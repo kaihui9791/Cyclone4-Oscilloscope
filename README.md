@@ -30,7 +30,7 @@ AD/DA模块通过IO接口与FPGA相连。<br>
 ## 系统设计
 ### 系统总框图
 硬件系统主要由数据缓存（FIFO_1,FIFO_2），控制（command_platform,trigger_control,fifo_control,uart_control），UART串口（bps,uart_tx,uart_rx）以及调试（DA,sin512）组成，各模块之间的连线与关系可以见下图。<br>
-![总框架图](https://github-img.oss-cn-chengdu.aliyuncs.com/img/总框架图.jpg)
+![总框架图](https://github-img.oss-cn-chengdu.aliyuncs.com/img/总框架图大小调整.jpg)
 
 ### 二级FIFO
 因为采样的速率等于输入AD的时钟频率，而UART数据传输是无论如何也达不到采样速率的，所以需要二级FIFO用来缓冲采样到的数据。本设计中当第一次满足触发条件时，第一级FIFO开始采样，当采样到512个点时（由计数器得到），开始向第二级FIFO发送数据，同时继续写入直到采样到1024个点，到达1024个点后，计数器清零，第一级FIFO关闭写入，仍然允许输出直到读空。第二级FIFO在接收到第一个数据时，允许读取，此时若UART处于空闲状态则开始发送数据，当读空后关闭读取，进入下一个循环或直接停止。
