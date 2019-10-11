@@ -1,0 +1,28 @@
+module command_platform(clk,rx_data,gather_set,trigger_level,trigger_set);
+
+//input or output
+input[7:0] rx_data;
+input clk;
+
+output reg[2:0] gather_set;
+output reg trigger_set;
+output reg[7:0] trigger_level;
+
+
+
+always @(posedge clk) begin
+	case(rx_data)
+		8'hF0:
+			gather_set <= 2'b00;
+		8'hF1:
+			gather_set <= 2'b01;
+		8'hF2:
+			gather_set <= 2'b10;
+		8'hF3:
+			trigger_set <= 1'b0;
+		8'hF4:
+			trigger_set <= 1'b1;
+		default:
+			trigger_level <= rx_data;
+		endcase
+	end
