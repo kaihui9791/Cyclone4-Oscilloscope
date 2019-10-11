@@ -1,0 +1,29 @@
+module trigger_control(trigger_activation,trigger_control,trigger_level,trigger_set,clk_20M,data);
+
+input trigger_set;
+input[7:0] trigger_level;
+input[7:0] data;
+input clk_20M;
+
+output reg trigger_activation;
+
+
+
+always @(posedge clk_20M) begin
+	if(data > trigger_level)
+		begin
+			if (trigger_set == 1'b0)
+				trigger_activation <= 1;
+			else
+				trigger_activation <= 0;
+		end
+	else
+		begin
+			if (trigger_set == 1'b0)
+				trigger_activation <= 0;
+			else
+				trigger_activation <= 1;
+		end
+	end
+	
+endmodule
