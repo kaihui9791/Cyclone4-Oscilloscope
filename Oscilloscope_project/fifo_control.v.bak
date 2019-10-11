@@ -1,0 +1,38 @@
+module fifo_control();
+
+
+always @(posedge clk_20M) begin
+	if(cnt == 11'b10000000000)
+		cnt <= 0;
+	else if(fifo_1_wr == 1)
+		cnt <= cnt + 1'b1;
+	end
+	
+	
+always @(posedge clk_20M) begin
+	case(gather_set)
+	2'b00:
+		fifo_full_rst <=1;
+	2'b01:
+	begin	if(fifo_1_full == 0 && cnt < 11'b01000000000 && fifo_2_empty == 0)
+		begin
+			fifo_1_wr <= 1;
+			fifo_1_rd <= 0;
+			fifo_2_wr <= 0;
+		end
+	else if(cnt == 11'b01000000000)
+		begin
+			fifo_1_wr <= 1;
+			fifo_1_rd <= 1;
+			fifo_2_wr <= 1;
+		end
+	else if(cnt == 11'b10000000000)
+		begin
+			fifo_1_wr <= 0;
+			fifo_1_rd <= 1;
+			fifo_2_wr <= 1;
+	default:
+			fifo_1_wr <= 0;
+			fifo_1_rd <= 0;
+			fifo_2_wr <= 0;
+	
